@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnetoOneChatActivity">
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/otoochat_appbar"
+        >
+
+    </include>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/otooRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/otoochat_appbar"
+        android:layout_above="@+id/otomessage"></androidx.recyclerview.widget.RecyclerView>
+
+
+        <EditText
+            android:layout_alignParentBottom="true"
+            android:id="@+id/otomessage"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:background="#00000000"
+            android:textSize="20dp"
+            android:hint="Send message...."
+            ></EditText>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/otoosendmessagebutton"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="#EEECEE"
+            app:civ_border_width="0.1dp"
+            app:civ_border_color="#ffffff"
+            android:src="@drawable/sendmessagebutton"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+</RelativeLayout>

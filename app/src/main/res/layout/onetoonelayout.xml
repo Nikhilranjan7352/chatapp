@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/receiver_messagetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receiver message"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true"
+        android:padding="7.5dp"
+        android:background="@drawable/back2"
+        >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/user_messagetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" here"
+        android:layout_gravity="right"
+        android:layout_marginLeft="100dp"
+        android:padding="7.5dp"
+        android:background="@drawable/back1"
+
+        android:textSize="18dp"
+        android:layout_alignParentRight="true"
+        >
+
+    </TextView>
+
+
+</RelativeLayout>
